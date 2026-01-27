@@ -3,6 +3,7 @@
 #include <vector>
 #include <cmath>
 
+
 class Layer {
 public:
     std::vector<std::vector<double>> weights;

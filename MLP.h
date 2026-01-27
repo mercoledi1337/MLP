@@ -14,8 +14,8 @@ public:
 
     void backpropagate(const std::vector<double>& target);
 
-    void train(const std::vector<std::vector<double>>& inout,
-                      const std::vector<std::vector<double>>& target,
+    void train(const std::vector<std::vector<double>>& inputs,
+                      const std::vector<std::vector<double>>& targets,
                       int epochs = 1000);
 };
 
