@@ -8,3 +8,8 @@ add_executable(MLP main.cpp
         Layer.cpp
         MLP.h
         MLP.cpp)
+
+find_package(OpenMP REQUIRED)
+find_package(OpenCV REQUIRED)
+target_link_libraries(MLP PRIVATE ${OpenCV_LIBS})
+target_link_libraries(MLP PUBLIC OpenMP::OpenMP_CXX)
